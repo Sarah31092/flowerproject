@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff5f2">
+    <title>꽃의 종류 — Flower Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/catalog.css?v=4">
+    <link rel="stylesheet" href="/static/flower-types.css?v=7">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/" aria-label="Flower Garden 홈"><span class="brand-mark" aria-hidden="true">❀</span><span>Flower Garden</span></a>
+        <nav class="main-nav" aria-label="주 메뉴">
+            <a class="nav-link" href="/">홈</a>
+            <span class="nav-divider" aria-hidden="true"></span>
+            <a class="nav-link active" href="/flowers">꽃의 종류</a>
+            <span class="nav-divider" aria-hidden="true"></span>
+            <a class="nav-link" href="/flower-stories">꽃말 이야기</a>
+            <span class="nav-divider" aria-hidden="true"></span>
+            <a class="nav-link" href="/chat">꽃 챗봇</a>
+        </nav>
+        <form id="flower-search" class="header-search">
+            <input id="flower-query" type="search" placeholder="검색하기..." aria-label="꽃 이름 검색">
+            <button type="submit" aria-label="검색">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.3 4.3"></path></svg>
+            </button>
+        </form>
+    </header>
+
+    <main class="types-page">
+        <section class="types-hero">
+            <div class="types-title">
+                <h1>Flower Types</h1>
+                <span class="title-heart" aria-hidden="true">♡</span>
+            </div>
+            <p><span aria-hidden="true">❀</span> 다양한 꽃들을 만나보세요! <span aria-hidden="true">❀</span></p>
+            <span class="types-petal petal-left" aria-hidden="true">❀</span>
+            <span class="types-petal petal-right" aria-hidden="true">❀</span>
+        </section>
+
+        <section class="types-content" aria-labelledby="types-heading">
+            <h2 id="types-heading" class="sr-only">꽃 종류 목록</h2>
+            <span id="flower-count" class="flower-count" aria-live="polite"></span>
+            <div id="type-filters" class="filter-list" aria-label="꽃 종류 필터"></div>
+            <section id="flower-list" class="type-results" aria-live="polite"></section>
+        </section>
+
+        <div id="flower-detail-modal" class="flower-modal" hidden>
+            <section class="flower-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-flower-name">
+                <button class="flower-modal-close" type="button" aria-label="상세 정보 닫기">×</button>
+                <div class="flower-modal-left">
+                    <img id="modal-flower-image" class="modal-flower-image" alt="">
+                    <div class="modal-tip">
+                        <strong><span aria-hidden="true">🌸</span> 알아두세요!</strong>
+                        <p id="modal-flower-tip"></p>
+                    </div>
+                </div>
+                <div class="flower-modal-content">
+                    <div class="modal-flower-heading">
+                        <span id="modal-flower-icon" class="modal-flower-icon" aria-hidden="true">🌸</span>
+                        <div>
+                            <h2 id="modal-flower-name"><span id="modal-flower-korean-name"></span> <small id="modal-flower-english-name"></small></h2>
+                            <p id="modal-flower-summary"></p>
+                        </div>
+                    </div>
+                    <div class="modal-flourish" aria-hidden="true"><span>🌸</span></div>
+                    <p id="modal-flower-description" class="modal-flower-description"></p>
+                    <dl class="modal-flower-facts">
+                        <div><dt><span aria-hidden="true">🌸</span> 꽃말</dt><dd id="modal-flower-language"></dd></div>
+                        <div><dt><span aria-hidden="true">🎨</span> 색상</dt><dd id="modal-flower-color"></dd></div>
+                        <div><dt><span aria-hidden="true">🌍</span> 원산지</dt><dd id="modal-flower-origin"></dd></div>
+                        <div><dt><span aria-hidden="true">🗓️</span> 개화 시기</dt><dd id="modal-flower-season"></dd></div>
+                        <div><dt><span aria-hidden="true">⭐</span> 특징</dt><dd id="modal-flower-features"></dd></div>
+                    </dl>
+                    <button class="modal-dismiss" type="button"><span aria-hidden="true">🌸</span> 닫기</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">❀</span><span>Flower Garden</span></a>
+        <span class="copyright">© 2026 Flower Garden. All rights reserved.</span>
+        <nav class="footer-links" aria-label="하단 메뉴">
+            <a href="/chat">고객센터</a><span>|</span>
+            <span class="footer-social" aria-hidden="true">◎</span>
+            <span class="footer-social" aria-hidden="true">▣</span>
+            <span class="footer-social" aria-hidden="true">▶</span>
+        </nav>
+    </footer>
+    <script src="/static/flower-types.js?v=5"></script>
+</body>
+</html>

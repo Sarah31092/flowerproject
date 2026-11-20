@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff3f5">
+    <title>{{ flower.name }} — Flower Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/flower-detail.css?v=3">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/" aria-label="Flower Garden 홈"><span class="brand-mark" aria-hidden="true">❀</span><span>Flower Garden</span></a>
+        <nav class="main-nav" aria-label="주 메뉴">
+            <a class="nav-link" href="/">홈</a>
+            <a class="nav-link" href="/flowers">꽃의 종류</a>
+            <a class="nav-link" href="/flower-stories">꽃말 이야기</a>
+            <a class="nav-link" href="/chat">꽃 챗봇</a>
+        </nav>
+        <form class="header-search" action="/" method="get">
+            <input name="q" type="search" placeholder="검색하기..." aria-label="꽃 검색">
+            <button type="submit" aria-label="검색">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.3 4.3"></path></svg>
+            </button>
+        </form>
+    </header>
+
+    <main class="detail-main">
+        <div class="page-frame">
+            <section class="flower-hero" id="flower-detail"
+                     data-flower-name="{{ flower.name }}"
+                     data-color="{{ flower.color }}">
+                <div class="flower-title">
+                    <p class="title-kicker">FLOWER JOURNAL <span>—</span> {{ flower.type }}</p>
+                    <h1>{{ flower.name }}</h1>
+                    <p class="flower-title-en">A flower with a story</p>
+                </div>
+                <div class="hero-gallery" aria-label="{{ flower.name }} 사진 모음">
+                    <figure class="hero-photo hero-photo-one">
+                        <img id="flower-photo-1" alt="{{ flower.name }} 꽃 사진 1">
+                    </figure>
+                    <figure class="hero-photo hero-photo-two">
+                        <img id="flower-photo-2" alt="{{ flower.name }} 꽃 사진 2">
+                    </figure>
+                    <figure class="hero-photo hero-photo-three">
+                        <img id="flower-photo-3" alt="{{ flower.name }} 꽃 사진 3">
+                    </figure>
+                    <span class="gallery-index">01 — 03</span>
+                </div>
+            </section>
+
+            <section class="story-section" id="flower-story">
+                <div class="story-copy">
+                    <span class="story-flourish" aria-hidden="true">⌁</span>
+                    <p class="story-lead">{{ flower.name }}이(가) 전하는<br><em>{{ flower.meaning }}</em></p>
+                    <p class="story-paragraph">{{ flower.name }}의 꽃말은 {{ flower.language }}입니다. 이 꽃은 마음을 다 전하지 못한 날, 말보다 다정한 방식으로 진심을 건넵니다. 한 송이의 색과 형태마다 저마다의 이야기가 피어납니다.</p>
+                    <p class="story-paragraph">꽃이 피는 계절과 자라온 곳을 함께 떠올려 보세요. {{ flower.origin }}에서 온 {{ flower.name }}은(는) {{ flower.season }}에 아름다운 모습을 만날 수 있습니다.</p>
+                    <a class="story-chat-link" href="/chat">이 꽃으로 마음 전하기 <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="story-gallery" aria-label="{{ flower.name }}의 또 다른 모습">
+                    <figure class="story-photo story-photo-one"><img id="flower-photo-4" alt="{{ flower.name }}의 모습"></figure>
+                    <figure class="story-photo story-photo-two"><img id="flower-photo-5" alt="{{ flower.name }}의 꽃다발"></figure>
+                    <figure class="story-photo story-photo-three"><img id="flower-photo-6" alt="{{ flower.name }}의 꽃잎"></figure>
+                </div>
+            </section>
+
+            <section class="flower-facts" aria-label="꽃 정보">
+                <div><span>꽃말 · FLOWER LANGUAGE</span><strong>{{ flower.language }}</strong></div>
+                <div><span>색상 · COLOR</span><strong>{{ flower.color }}</strong></div>
+                <div><span>원산지 · ORIGIN</span><strong>{{ flower.origin }}</strong></div>
+                <div><span>개화 시기 · BLOOMING SEASON</span><strong>{{ flower.season }}</strong></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="detail-footer">
+        <a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">❀</span><span>Flower Garden</span></a>
+        <span>한 송이의 꽃, 하나의 마음.</span>
+        <a href="/">꽃 도감으로 돌아가기 ↑</a>
+    </footer>
+    <script src="/static/flower-detail.js?v=3"></script>
+</body>
+</html>

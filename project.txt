@@ -1,0 +1,95 @@
+Flower AI 프로젝트 구성도
+
+1. 목적
+FastAPI만으로 꽃 종류, 꽃말, 꽃의 의미를 검색하고 추천합니다.
+React와 마크다운 기능을 사용하지 않습니다.
+
+2. 아키텍처
+브라우저
+  -> FastAPI / Jinja2 화면
+  -> REST API
+  -> ChromaDB 벡터 검색
+
+data/flowers.json
+  -> scripts/ingest_flowers.py
+  -> 개발자가 수동 실행
+  -> chroma_db/
+
+MCP 클라이언트
+  -> /mcp 또는 stdio
+  -> MCP 꽃 도구
+  -> ChromaDB
+
+3. 폴더 구조
+backend/main.py              FastAPI 앱과 화면 라우팅
+backend/api/routes.py        REST API
+backend/services/vector_store.py ChromaDB 검색
+backend/mcp_server/server.py MCP 서버
+backend/templates/index.html 꽃 도감 첫 화면
+backend/templates/chat.html  별도 꽃 추천 챗봇 화면
+backend/templates/flower_types.html 꽃 종류 목록 및 필터 화면
+backend/templates/flower_stories.html 꽃말 이야기 화면
+backend/templates/flower_detail.html 꽃 상세 정보 화면
+backend/static/catalog.css   꽃 도감 스타일
+backend/static/catalog.js    꽃 도감 검색 동작
+backend/static/flower-types.css 꽃 종류 화면 스타일
+backend/static/flower-types.js 꽃 종류 필터 및 검색
+backend/static/flower-stories.css 꽃말 이야기 화면 스타일
+backend/static/flower-stories.js 꽃말 이야기 목록
+backend/static/style.css     챗봇 스타일
+backend/static/app.js        챗봇 대화 동작
+backend/static/flower-detail.css 꽃 상세 스타일
+backend/static/flower-detail.js 꽃 상세 상호작용
+data/flowers.json            원본 꽃 데이터
+scripts/ingest_flowers.py    수동 임베딩
+chroma_db/                   로컬 벡터 데이터
+requirements.txt             라이브러리 목록
+project.txt                  아키텍처 문서
+
+4. 화면 구성
+제목과 설명
+꽃 검색 입력창
+검색 버튼
+꽃 카드 목록
+
+각 카드: 이름, 종류, 꽃말, 의미, 색상, 원산지, 개화 시기
+
+5. REST API
+GET /                        꽃 도감 첫 화면
+GET /chat                    별도 꽃 추천 챗봇 화면
+GET /flowers                 꽃 종류 목록과 필터 화면
+GET /flower-stories          꽃말 이야기 화면
+GET /flowers/{name}          꽃 카드에서 여는 상세 정보 화면
+GET /api/flowers?limit=20    꽃 목록
+GET /api/flowers/{name}      꽃 상세
+POST /api/search             유사도 검색
+  {"query":"감사의 마음","limit":5}
+POST /api/chat               챗봇 대화와 꽃 추천
+  {"message":"감사한 분께 드릴 꽃을 추천해줘","history":[]}
+  .env의 OPENAI_API_KEY로 OpenAI 답변을 생성하고 ChromaDB 검색 결과를 참고합니다.
+
+6. MCP 도구
+search_flowers(query, limit)
+get_flower(name)
+list_flowers(limit)
+
+HTTP MCP 주소: /mcp
+stdio 실행: .venv/Scripts/python.exe -m backend.mcp_server.server
+
+7. 실행
+.env 파일에 OPENAI_API_KEY를 설정합니다. API 키는 브라우저에 전달되지 않습니다.
+
+pip 설치
+.venv/Scripts/python.exe -m pip install -r requirements.txt
+
+데이터 임베딩
+.venv/Scripts/python.exe scripts/ingest_flowers.py
+
+웹 서버
+.venv/Scripts/python.exe -m uvicorn backend.main:app --reload
+
+또는 프로젝트 폴더의 run.bat 실행
+run.bat --port 8123
+
+접속
+http://127.0.0.1:8000

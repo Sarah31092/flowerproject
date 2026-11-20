@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff0f2">
+    <title>Flower Chatbot — Flower Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css?v=6">
+</head>
+<body class="chat-page">
+    <header class="site-header">
+        <a class="brand" href="/" aria-label="Flower Garden 홈"><span class="brand-mark" aria-hidden="true">✿</span><span>Flower Garden</span></a>
+        <nav class="main-nav" aria-label="주 메뉴">
+            <a class="nav-link" href="/">홈</a>
+            <a class="nav-link" href="/flowers">꽃의 종류</a>
+            <a class="nav-link" href="/flower-stories">꽃말 이야기</a>
+            <a class="nav-link active" href="/chat">꽃 챗봇</a>
+        </nav>
+        <form class="header-search" action="/" method="get">
+            <input name="q" type="search" placeholder="검색하기..." aria-label="꽃 검색">
+            <button type="submit" aria-label="검색">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.3 4.3"></path></svg>
+            </button>
+        </form>
+    </header>
+
+    <main class="chat-scene">
+        <div class="petal petal-one" aria-hidden="true">✿</div>
+        <div class="petal petal-two" aria-hidden="true">✿</div>
+        <div class="petal petal-three" aria-hidden="true">✿</div>
+        <section class="chat-content" aria-label="꽃 추천 챗봇">
+            <div class="chat-heading">
+                <p class="chat-kicker">꽃이 전하는 작은 행복</p>
+                <h1>Flower Chatbot <span aria-hidden="true">♡</span></h1>
+                <p class="chat-subtitle">궁금한 꽃에 대해 무엇이든 물어보세요! <span aria-hidden="true">❧</span></p>
+            </div>
+
+            <div id="chat-messages" class="chat-messages" aria-live="polite">
+                <div class="welcome-message">
+                    <div class="welcome-bubble">
+                        안녕하세요! <span aria-hidden="true">🌸</span><br>
+                        저는 꽃 챗봇이에요!<br>
+                        궁금한 꽃의 정보나 꽃말을 알려드릴게요.<br>
+                        어떤 것이 궁금하신가요? <span aria-hidden="true">😊</span>
+                    </div>
+                    <div class="suggestion-heading"><span></span><strong>추천 질문</strong><span></span></div>
+                    <div class="suggestions">
+                        <button type="button" class="suggestion" data-message="장미에 대해 알려줘요"><span aria-hidden="true">🌸</span> 장미에 대해 알려줘요</button>
+                        <button type="button" class="suggestion" data-message="튤립의 꽃말은?"><span aria-hidden="true">🌸</span> 튤립의 꽃말은?</button>
+                        <button type="button" class="suggestion" data-message="해바라기의 의미는?"><span aria-hidden="true">🌸</span> 해바라기의 의미는?</button>
+                        <button type="button" class="suggestion" data-message="수국은 어떤 꽃인가요?"><span aria-hidden="true">🌸</span> 수국은 어떤 꽃인가요?</button>
+                        <button type="button" class="suggestion" data-message="예쁜 꽃 추천해줘요!"><span aria-hidden="true">🌸</span> 예쁜 꽃 추천해줘요!</button>
+                    </div>
+                </div>
+            </div>
+
+            <form id="chat-form" class="chat-composer">
+                <label class="sr-only" for="chat-input">궁금한 꽃에 대해 질문하기</label>
+                <span class="composer-flower" aria-hidden="true">✿</span>
+                <textarea id="chat-input" name="message" rows="1" maxlength="500" placeholder="궁금한 내용을 입력해 주세요..." required></textarea>
+                <button id="send-button" type="submit" aria-label="메시지 보내기">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 2.8 14.8 21c-.4 1.1-1.9 1.1-2.4.1l-3.1-6.1 6-6-8.1 5.1-5.7-2.8c-1-.5-.9-2 .2-2.4l18-6.7c1-.4 2.2.6 1.8 1.6Z"></path></svg>
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="chat-footer"><span></span><p>© 2026 Flower Garden. All rights reserved.</p><span></span></footer>
+    <script src="/static/app.js?v=5"></script>
+</body>
+</html>

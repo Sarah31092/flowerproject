@@ -1,0 +1,10 @@
+fastapi==0.163.2
+uvicorn==0.54.0
+jinja2==3.1.6
+python-multipart==0.0.34
+chromadb==1.5.9
+mcp==1.30.0
+httpx==0.28.1
+pydantic==2.14.3
+pydantic-settings==2.16.3
+openai==2.54.0

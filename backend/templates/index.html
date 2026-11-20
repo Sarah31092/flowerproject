@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff5f2">
+    <title>Flower Garden — 꽃이 전하는 작은 행복</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/catalog.css?v=6">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/" aria-label="Flower Garden 홈">
+            <span class="brand-mark" aria-hidden="true">❀</span>
+            <span>Flower Garden</span>
+        </a>
+        <nav class="main-nav" aria-label="주 메뉴">
+            <a class="nav-link active" href="/">홈</a>
+            <a class="nav-link" href="/flowers">꽃의 종류</a>
+            <a class="nav-link" href="/flower-stories">꽃말 이야기</a>
+            <a class="nav-link" href="/chat">꽃 챗봇</a>
+        </nav>
+        <form id="search-form" class="header-search">
+            <input id="query" name="query" type="search" placeholder="검색하기..." aria-label="꽃 검색" autocomplete="off" required>
+            <button type="submit" aria-label="검색">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.3 4.3"></path></svg>
+            </button>
+        </form>
+    </header>
+
+    <main>
+        <section class="hero" id="about">
+            <div class="hero-backdrop" aria-hidden="true"></div>
+            <div class="hero-copy">
+                <p class="hero-kicker">꽃이 전하는 작은 행복</p>
+                <h1>Flower Garden<span class="hero-heart" aria-hidden="true">♡</span></h1>
+                <p class="hero-description">꽃마다 다른 아름다움과 의미,<br>지금, 꽃말 이야기를 만나보세요.</p>
+                <a class="hero-button" href="#collection">꽃 알아보기 <span aria-hidden="true">›</span></a>
+            </div>
+            <span class="hero-leaf hero-leaf-left" aria-hidden="true">❧</span>
+            <span class="hero-leaf hero-leaf-right" aria-hidden="true">❧</span>
+        </section>
+
+        <section class="collection-section" id="collection">
+            <div class="section-title">
+                <span class="title-flourish" aria-hidden="true"></span>
+                <div>
+                    <p class="eyebrow">A GARDEN FULL OF STORIES</p>
+                    <h2>Beautiful Flowers</h2>
+                    <p>세상에는 아름다운 꽃들이 가득합니다.</p>
+                </div>
+                <span class="title-flourish" aria-hidden="true"></span>
+            </div>
+            <p class="result-count" id="status" aria-live="polite"></p>
+            <section id="results" class="results" aria-label="꽃 목록"></section>
+        </section>
+
+        <section class="story-banner" id="story">
+            <div class="story-decoration" aria-hidden="true">❀</div>
+            <div class="story-heading">
+                <p class="eyebrow">A FLOWER'S MEANING</p>
+                <h2>꽃이 가진 특별한 의미</h2>
+                <p>꽃말과 함께하는<br>더 깊은 꽃말 이야기</p>
+                <a href="/flower-stories" class="story-button">꽃말 이야기 만나기 <span aria-hidden="true">›</span></a>
+            </div>
+            <blockquote>“ 꽃은 말없이,<br>마음을 전하는 선물입니다. ”</blockquote>
+            <div class="story-garden" role="img" aria-label="햇살 아래 피어난 꽃밭"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">❀</span><span>Flower Garden</span></a>
+        <span class="copyright">© 2026 Flower Garden. All rights reserved.</span>
+        <nav class="footer-links" aria-label="하단 메뉴">
+            <a href="#about">개인정보처리방침</a><span>|</span>
+            <a href="#about">이용약관</a><span>|</span>
+            <a href="/chat">고객센터</a>
+        </nav>
+    </footer>
+    <script src="/static/catalog.js?v=5"></script>
+</body>
+</html>

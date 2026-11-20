@@ -1,0 +1,165 @@
+:root {
+    color: #693b3b;
+    background: #fffaf8;
+    font-family: "DM Sans", "Malgun Gothic", sans-serif;
+    --ink: #693b3b;
+    --rose: #ce747b;
+    --rose-dark: #9c4c57;
+    --paper: #fffaf8;
+    --muted: #936a68;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: var(--paper); }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+
+.site-header {
+    height: 78px;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0 3.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 1px solid rgba(126, 67, 69, .1);
+    background: rgba(255, 247, 244, .54);
+    backdrop-filter: blur(12px);
+}
+.brand { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 10px; color: var(--rose-dark); font-family: "Allura", "Gowun Batang", cursive; font-size: 37px; line-height: 1; }
+.brand-mark { color: var(--rose); font-family: "Gowun Batang", serif; font-size: 28px; }
+.main-nav { height: 100%; display: flex; align-items: center; gap: clamp(17px, 2.7vw, 42px); }
+.nav-link { height: 100%; display: grid; place-items: center; position: relative; color: #674647; font-family: "Gowun Batang", serif; font-size: 13px; white-space: nowrap; transition: color .2s; }
+.nav-link:hover,.nav-link.active { color: var(--rose-dark); }
+.nav-link.active::after { content: ""; height: 1px; position: absolute; right: 0; bottom: 15px; left: 0; background: var(--rose-dark); }
+.header-search { width: clamp(170px, 18vw, 260px); height: 42px; flex: 0 0 auto; display: flex; align-items: center; padding: 0 8px 0 16px; border: 1px solid rgba(174, 108, 108, .14); border-radius: 999px; background: rgba(255,255,255,.82); }
+.header-search input { width: 100%; min-width: 0; height: 100%; border: 0; outline: 0; color: var(--ink); background: transparent; font-family: "Gowun Batang",serif; font-size: 11px; }
+.header-search input::placeholder { color: #b48b89; }
+.header-search button { width: 30px; height: 30px; flex: 0 0 auto; display: grid; place-items: center; border: 0; border-radius: 50%; color: var(--rose-dark); background: transparent; cursor: pointer; }
+.header-search svg { width: 19px; height: 19px; stroke: currentColor; stroke-width: 1.8; }
+
+.hero { min-height: 465px; position: relative; display: flex; align-items: center; overflow: hidden; background: #f3c6c1; }
+.hero-backdrop { position: absolute; inset: 0; background-image: linear-gradient(90deg,rgba(255,246,244,.82) 0%,rgba(255,244,242,.62) 34%,rgba(255,244,242,.12) 72%),url("flower-garden-background.png"); background-position: center, center 53%; background-size: cover; }
+.hero-copy { width: min(680px, 90%); position: relative; z-index: 1; margin: 50px 0 0 6%; }
+.hero-kicker { margin: 0 0 10px 24px; color: #7d4146; font-family: "Gowun Batang", serif; font-size: 17px; }
+.hero h1 { margin: 0; position: relative; color: #8d3e4c; font-family: "Allura", "Gowun Batang", cursive; font-size: clamp(76px, 10.5vw, 145px); font-weight: 400; line-height: 1.02; letter-spacing: -.025em; white-space: nowrap; text-shadow: 0 2px 15px rgba(255,245,240,.3); }
+.hero-heart { position: absolute; top: -3px; right: 7%; color: #dc7885; font-family: "DM Sans",sans-serif; font-size: 48px; }
+.hero-description { margin: 12px 0 22px 26px; color: #754444; font-family: "Gowun Batang",serif; font-size: 16px; line-height: 1.8; }
+.hero-button { min-width: 150px; height: 43px; margin-left: 26px; padding: 0 18px; display: inline-flex; align-items: center; justify-content: space-between; gap: 22px; border-radius: 999px; color: white; background: #d7787e; font-family: "Gowun Batang",serif; font-size: 12px; box-shadow: 0 7px 18px rgba(161,82,89,.16); transition: transform .2s,background .2s; }
+.hero-button:hover { transform: translateY(-2px); background: #bd606b; }
+.hero-button span { font-size: 20px; line-height: 1; }
+.hero-leaf { position: absolute; bottom: -31px; color: rgba(135,117,75,.62); font-family: "Gowun Batang",serif; font-size: 105px; line-height: 1; }
+.hero-leaf-left { left: 1.5%; transform: rotate(-35deg); }
+.hero-leaf-right { right: 2%; transform: rotate(30deg) scaleX(-1); }
+
+.collection-section { position: relative; padding: 22px 3.6% 34px; background: #fffaf8; }
+.section-title { display: flex; align-items: center; justify-content: center; gap: 18px; margin-bottom: 21px; text-align: center; }
+.section-title .eyebrow { margin: 0 0 2px; color: #b9817b; font-size: 7px; letter-spacing: .2em; }
+.section-title h2 { margin: 0; color: #bc606a; font-family: "Allura", "Gowun Batang", cursive; font-size: 45px; font-weight: 400; line-height: 1.05; }
+.section-title p:last-child { margin: 3px 0 0; color: #805151; font-family: "Gowun Batang",serif; font-size: 11px; }
+.title-flourish { width: 55px; height: 1px; position: relative; background: #e6a3a2; }
+.title-flourish::after { content: "♡"; position: absolute; top: -10px; right: -2px; color: #d88187; font-size: 12px; }
+.title-flourish:last-child::after { right: auto; left: -2px; }
+.result-count { min-height: 14px; margin: -14px 0 7px; color: #a77a77; font-size: 8px; text-align: center; letter-spacing: .1em; }
+.results { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 18px; }
+.flower-card { min-width: 0; overflow: hidden; border: 1px solid #f1d9d4; border-radius: 17px; color: inherit; background: #fffdfa; box-shadow: 0 5px 13px rgba(148,78,79,.1); transition: transform .23s,box-shadow .23s; }
+.flower-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(148,78,79,.16); }
+.flower-photo { height: clamp(125px, 13vw, 190px); position: relative; overflow: hidden; background: #f2e3df; }
+.flower-photo img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .45s; }
+.flower-card:hover .flower-photo img { transform: scale(1.055); }
+.flower-photo::after { content: none; }
+.flower-number { display: none; }
+.flower-info { min-height: 93px; padding: 11px 14px 12px; position: relative; background: linear-gradient(110deg,#fffdfa,#fff4f1); }
+.flower-meta { display: none; }
+.flower-card h3 { margin: 0; padding-right: 35px; color: #814549; font-family: "Gowun Batang",serif; font-size: 15px; font-weight: 700; }
+.flower-language { margin: 2px 0 5px; color: #9a6d6c; font-family: "Gowun Batang",serif; font-size: 9px; }
+.flower-meaning { width: fit-content; max-width: 100%; margin: 0; padding: 3px 9px; overflow: hidden; border: 0; border-radius: 999px; color: #986669; background: #fbe2df; font-size: 8px; line-height: 1.35; text-overflow: ellipsis; white-space: nowrap; }
+.flower-details { display: none; }
+.flower-info::after { content: "→"; width: 29px; height: 29px; position: absolute; top: 24px; right: 13px; display: grid; place-items: center; border-radius: 50%; color: #b55e67; background: #fbd8d4; font-size: 16px; }
+.empty-state { grid-column: 1/-1; padding: 45px 20px; border: 1px dashed #e6c6c2; border-radius: 12px; color: #916d69; text-align: center; font-size: 12px; }
+
+.story-banner { min-height: 155px; margin: 0 2.6% 13px; position: relative; display: grid; grid-template-columns: 1fr 1.05fr 1.1fr; align-items: center; overflow: hidden; border-radius: 28px; background: linear-gradient(100deg,#fbdedb,#fff0eb 48%,#f8ddd8); }
+.story-heading { z-index: 1; padding: 17px 20px 17px 8%; }
+.story-heading .eyebrow { margin: 0 0 5px; color: #b67a79; font-size: 7px; letter-spacing: .18em; }
+.story-heading h2 { margin: 0 0 5px; color: #7f4149; font-family: "Gowun Batang",serif; font-size: 19px; font-weight: 400; }
+.story-heading > p:not(.eyebrow) { margin: 0; color: #916663; font-family: "Gowun Batang",serif; font-size: 10px; line-height: 1.6; }
+.story-button { margin-top: 9px; padding: 6px 12px; display: inline-flex; gap: 13px; border: 1px solid #e4a2a0; border-radius: 999px; color: #a95f64; font-size: 9px; }
+.story-button span { font-size: 13px; line-height: .8; }
+.story-banner blockquote { z-index: 1; margin: 0; color: #82434b; font-family: "Gowun Batang",serif; font-size: clamp(16px,2vw,24px); line-height: 1.55; text-align: center; }
+.story-garden { height: 100%; position: absolute; right: 0; bottom: 0; width: 48%; background: linear-gradient(90deg,#ffebe7 0%,rgba(255,235,231,.12) 34%),url("flower-garden-background.png") center 64%/cover; opacity: .8; }
+.story-decoration { position: absolute; left: 1%; bottom: -32px; color: rgba(199,133,126,.45); font-size: 125px; }
+.site-footer { min-height: 54px; padding: 8px 3.7%; display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #a27b78; }
+.footer-brand { font-size: 24px; }
+.footer-brand .brand-mark { font-size: 19px; }
+.copyright { padding-left: 20px; border-left: 1px solid #e5c4bf; font-size: 8px; }
+.footer-links { display: flex; align-items: center; gap: 9px; color: #8e6e6c; font-size: 8px; }
+.footer-links span { color: #d4aeaa; }
+
+@media (min-width: 1400px) {
+    .hero { min-height: min(34vw,540px); }
+    .collection-section { padding-top: 27px; padding-bottom: 40px; }
+}
+@media (max-width: 1000px) {
+    .site-header { gap: 15px; padding: 0 3%; }
+    .brand { font-size: 31px; }
+    .main-nav { gap: 16px; }
+    .nav-link { font-size: 11px; }
+    .header-search { width: 155px; }
+    .results { gap: 12px; }
+    .flower-info { padding-right: 10px; padding-left: 11px; }
+}
+@media (max-width: 700px) {
+    .site-header { height: 66px; padding: 0 17px; }
+    .brand { font-size: 29px; }
+    .brand-mark { font-size: 23px; }
+    .main-nav { display: none; }
+    .header-search { width: min(42vw,210px); height: 36px; margin-left: auto; }
+    .hero { min-height: 410px; padding-top: 48px; }
+    .hero-backdrop { background-image: linear-gradient(90deg,rgba(255,246,244,.82),rgba(255,244,242,.52) 54%,rgba(255,244,242,.12)),url("flower-garden-background.png"); background-position: center,right 53%; }
+    .hero-copy { width: 94%; margin-left: 5%; }
+    .hero h1 { font-size: clamp(61px,13vw,100px); }
+    .hero-kicker { margin-left: 8px; font-size: 14px; }
+    .hero-description,.hero-button { margin-left: 9px; }
+    .hero-leaf { font-size: 75px; }
+    .collection-section { padding: 22px 17px 28px; }
+    .section-title h2 { font-size: 39px; }
+    .title-flourish { width: 31px; }
+    .results { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 11px; }
+    .flower-photo { height: clamp(120px,33vw,205px); }
+    .flower-info { min-height: 87px; }
+    .story-banner { min-height: 188px; margin: 0 12px 10px; grid-template-columns: 1fr 1fr; border-radius: 21px; }
+    .story-heading { padding-left: 20px; }
+    .story-banner blockquote { font-size: 15px; }
+    .story-garden { width: 50%; opacity: .58; }
+    .story-decoration { font-size: 85px; }
+    .site-footer { flex-wrap: wrap; padding: 10px 17px; }
+    .footer-brand { font-size: 21px; }
+    .copyright { display: none; }
+    .footer-links { gap: 6px; font-size: 7px; }
+}
+@media (max-width: 430px) {
+    .brand { font-size: 25px; }
+    .header-search { width: 42vw; }
+    .hero { min-height: 370px; }
+    .hero h1 { font-size: clamp(55px,12.5vw,75px); }
+    .hero-heart { top: -16px; right: 1%; font-size: 35px; }
+    .hero-description { font-size: 14px; }
+    .section-title { gap: 9px; }
+    .section-title h2 { font-size: 34px; }
+    .title-flourish { width: 20px; }
+    .flower-info { padding-left: 9px; }
+    .flower-card h3 { font-size: 13px; }
+    .flower-info::after { width: 25px; height: 25px; top: 25px; right: 8px; }
+    .story-banner { min-height: 170px; }
+    .story-heading h2 { font-size: 15px; }
+    .story-banner blockquote { font-size: 13px; }
+    .footer-links { gap: 4px; font-size: 6px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    *,*::before,*::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}
