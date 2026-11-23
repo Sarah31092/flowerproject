@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Allura&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/catalog.css?v=6">
-    <link rel="stylesheet" href="/static/flower-stories.css?v=8">
+    <link rel="stylesheet" href="/static/flower-stories.css?v=29">
 </head>
 <body>
     <header class="site-header">
@@ -64,27 +64,24 @@
                 </div>
                 <div class="story-modal-content">
                     <div class="story-modal-heading">
-                        <span id="story-modal-icon" class="story-modal-icon" aria-hidden="true">🌸</span>
+                        <img id="story-modal-icon" class="story-modal-icon" alt="" aria-hidden="true">
                         <div>
                             <h2 id="story-modal-name"><span id="story-modal-korean-name"></span> <small id="story-modal-english-name"></small></h2>
                             <p id="story-modal-summary"></p>
                         </div>
                     </div>
                     <div class="story-modal-flourish" aria-hidden="true"><span>🌸</span></div>
-                    <p id="story-modal-description" class="story-modal-description"></p>
-                    <dl class="story-modal-facts">
-                        <div class="story-fact-heading"><span aria-hidden="true">🌸</span> 더 알아보기</div>
-                        <div><dt><span aria-hidden="true">💗</span> 꽃말</dt><dd id="story-modal-language"></dd></div>
-                        <div><dt><span aria-hidden="true">🗓️</span> 개화 시기</dt><dd id="story-modal-season"></dd></div>
-                        <div><dt><span aria-hidden="true">🎨</span> 색상</dt><dd id="story-modal-color"></dd></div>
-                        <div><dt><span aria-hidden="true">⭐</span> 특징</dt><dd id="story-modal-features"></dd></div>
-                        <div><dt><span aria-hidden="true">🌍</span> 원산지</dt><dd id="story-modal-origin"></dd></div>
-                        <div><dt><span aria-hidden="true">🌿</span> 관리법</dt><dd id="story-modal-care"></dd></div>
-                    </dl>
-                </div>
-                <div class="story-modal-footer">
-                    <p><span aria-hidden="true">🌸</span><span id="story-modal-note"></span></p>
-                    <button class="story-modal-dismiss" type="button"><span aria-hidden="true">🌸</span> 닫기</button>
+                    <section class="story-modal-meanings" aria-label="꽃의 색깔과 꽃말">
+                        <div class="story-modal-section">
+                            <h3><span aria-hidden="true">🎨</span> 꽃의 색깔</h3>
+                            <div id="story-modal-colors" class="story-modal-color-list"></div>
+                        </div>
+                        <div class="story-modal-section">
+                            <h3><span aria-hidden="true">💗</span> 꽃말</h3>
+                            <p id="story-modal-language" class="story-modal-language"></p>
+                            <p id="story-modal-meaning" class="story-modal-meaning"></p>
+                        </div>
+                    </section>
                 </div>
             </section>
         </div>
@@ -95,6 +92,6 @@
         <span class="copyright">© 2026 Flower Garden. All rights reserved.</span>
         <a class="stories-home-link" href="/">꽃 도감으로 돌아가기 ↑</a>
     </footer>
-    <script src="/static/flower-stories.js?v=6"></script>
+    <script src="/static/flower-stories.js?v=12"></script>
 </body>
 </html>

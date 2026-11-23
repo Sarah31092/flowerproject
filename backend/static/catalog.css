@@ -69,8 +69,8 @@ button, input { font: inherit; }
 .results { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 18px; }
 .flower-card { min-width: 0; overflow: hidden; border: 1px solid #f1d9d4; border-radius: 17px; color: inherit; background: #fffdfa; box-shadow: 0 5px 13px rgba(148,78,79,.1); transition: transform .23s,box-shadow .23s; }
 .flower-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(148,78,79,.16); }
-.flower-photo { height: clamp(125px, 13vw, 190px); position: relative; overflow: hidden; background: #f2e3df; }
-.flower-photo img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .45s; }
+.flower-photo { height: clamp(115px, 11vw, 165px); position: relative; overflow: hidden; border-radius: 15px 15px 0 0; background: #f2e3df; }
+.flower-photo img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; transition: transform .45s; }
 .flower-card:hover .flower-photo img { transform: scale(1.055); }
 .flower-photo::after { content: none; }
 .flower-number { display: none; }
@@ -130,7 +130,7 @@ button, input { font: inherit; }
     .section-title h2 { font-size: 39px; }
     .title-flourish { width: 31px; }
     .results { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 11px; }
-    .flower-photo { height: clamp(120px,33vw,205px); }
+    .flower-photo { height: clamp(105px, 28vw, 170px); }
     .flower-info { min-height: 87px; }
     .story-banner { min-height: 188px; margin: 0 12px 10px; grid-template-columns: 1fr 1fr; border-radius: 21px; }
     .story-heading { padding-left: 20px; }

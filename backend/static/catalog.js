@@ -4,16 +4,20 @@ const results = document.getElementById("results");
 const status = document.getElementById("status");
 
 const flowerImages = {
-    "장미": "photo-1518895949257-7621c3c786d7",
-    "라벤더": "photo-1470252649378-9c29740c9fa8",
-    "해바라기": "photo-1470509037663-253afd7f0f51",
-    "국화": "photo-1508610048659-a06b669e3321",
-    "튤립": "photo-1520763185298-1b434c919102",
-    "카네이션": "photo-1494972308805-463bc619d34e",
-    "벚꽃": "photo-1522383225653-ed111181a951",
-    "수국": "photo-1508610048659-a06b669e3321"
+    "장미": "/static/flowers/01_rose.png",
+    "라벤더": "/static/flowers/02_lavender.png",
+    "해바라기": "/static/flowers/03_sunflower.png",
+    "국화": "/static/flowers/04_chrysanthemum.png",
+    "튤립": "/static/flowers/05_tulip.png",
+    "카네이션": "/static/flowers/06_carnations.png",
+    "벚꽃": "/static/flowers/07_cherry blossoms.png",
+    "수국": "/static/flowers/08_hydrangea.png",
+    "안개꽃": "/static/flowers/09_gypsophila.png",
+    "데이지": "/static/flowers/10_daisy.png",
+    "작약": "/static/flowers/11_peony.png",
+    "프리지아": "/static/flowers/12_freesia.png"
 };
-const fallbackImage = "photo-1490750967868-88aa4486c946";
+const fallbackImage = "/static/flowers/01_rose.png";
 
 form.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -72,12 +76,11 @@ function render(flowers, isSearch) {
         : `${String(flowers.length).padStart(2, "0")} FLOWERS TO DISCOVER`;
     results.innerHTML = flowers.map((flower, index) => {
         const image = flowerImages[flower.name] || fallbackImage;
-        const imageUrl = `https://images.unsplash.com/${image}?auto=format&fit=crop&w=700&q=80`;
         return `
             <a class="flower-card" href="/flowers/${encodeURIComponent(flower.name)}" aria-label="${escapeHtml(flower.name)} 상세 정보 보기">
                 <div class="flower-photo">
-                    <img src="${imageUrl}" alt="${escapeHtml(flower.name)}" loading="lazy"
-                         onerror="this.src='https://images.unsplash.com/${fallbackImage}?auto=format&fit=crop&w=700&q=80'">
+                    <img src="${image}" alt="${escapeHtml(flower.name)}" loading="lazy"
+                         onerror="this.src='${fallbackImage}'">
                     <span class="flower-number">F. ${String(index + 1).padStart(2, "0")}</span>
                 </div>
                 <div class="flower-info">

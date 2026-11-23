@@ -5,20 +5,20 @@ const detailModal = document.getElementById("story-detail-modal");
 const modalCloseButtons = detailModal.querySelectorAll(".story-modal-close, .story-modal-dismiss");
 
 const flowerImages = {
-    "장미": "photo-1518895949257-7621c3c786d7",
-    "라벤더": "photo-1470252649378-9c29740c9fa8",
-    "해바라기": "photo-1470509037663-253afd7f0f51",
-    "국화": "photo-1508610048659-a06b669e3321",
-    "튤립": "photo-1520763185298-1b434c919102",
-    "카네이션": "photo-1518709766631-a6a7f45921c3",
-    "벚꽃": "photo-1522383225653-ed111181a951",
-    "수국": "photo-1469259947269-3f74a5d3d5e7",
-    "안개꽃": "photo-1497250681960-ef046c08a56e",
-    "데이지": "photo-1490750967868-88aa4486c946",
-    "작약": "photo-1523438885200-e635ba2c371e",
-    "프리지아": "photo-1490750967868-88aa4486c946"
+    "장미": "/static/flowers/01_rose.png",
+    "라벤더": "/static/flowers/02_lavender.png",
+    "해바라기": "/static/flowers/03_sunflower.png",
+    "국화": "/static/flowers/04_chrysanthemum.png",
+    "튤립": "/static/flowers/05_tulip.png",
+    "카네이션": "/static/flowers/06_carnations.png",
+    "벚꽃": "/static/flowers/07_cherry blossoms.png",
+    "수국": "/static/flowers/08_hydrangea.png",
+    "안개꽃": "/static/flowers/09_gypsophila.png",
+    "데이지": "/static/flowers/10_daisy.png",
+    "작약": "/static/flowers/11_peony.png",
+    "프리지아": "/static/flowers/12_freesia.png"
 };
-const fallbackImage = "photo-1490750967868-88aa4486c946";
+const fallbackImage = "/static/flowers/01_rose.png";
 const colorSwatches = {
     "빨강": "#c94d59",
     "분홍": "#e9a0b0",
@@ -149,7 +149,6 @@ function renderStories() {
 
     storyList.innerHTML = visibleFlowers.map((flower) => {
             const image = flowerImages[flower.name] || fallbackImage;
-            const imageUrl = `https://images.unsplash.com/${image}?auto=format&fit=crop&w=800&q=80`;
             const name = escapeHtml(flower.name);
             const colorTags = getFlowerColors(flower).map((color) => `
                 <span class="story-color-tag">
@@ -159,8 +158,8 @@ function renderStories() {
             return `
                 <article class="story-card">
                     <div class="story-card-image">
-                        <img src="${imageUrl}" alt="${name}" loading="lazy"
-                             onerror="this.src='https://images.unsplash.com/${fallbackImage}?auto=format&fit=crop&w=800&q=80'">
+                        <img src="${image}" alt="${name}" loading="lazy"
+                             onerror="this.src='${fallbackImage}'">
                         <span class="story-card-type">${escapeHtml(flower.type || "꽃")}</span>
                     </div>
                     <div class="story-card-copy">
@@ -183,30 +182,34 @@ function renderStories() {
 }
 
 function openFlowerDetails(flower, trigger) {
-    const imageId = flowerImages[flower.name] || fallbackImage;
+    const imageUrl = flowerImages[flower.name] || fallbackImage;
     const image = document.getElementById("story-modal-image");
     image.onerror = () => {
         image.onerror = null;
-        image.src = `https://images.unsplash.com/${fallbackImage}?auto=format&fit=crop&w=1100&q=90`;
+        image.src = fallbackImage;
     };
-    image.src = `https://images.unsplash.com/${imageId}?auto=format&fit=crop&w=1100&q=90`;
+    image.src = imageUrl;
     image.alt = `${flower.name} 사진`;
-    document.getElementById("story-modal-icon").textContent = flowerIcons[flower.name] || "🌸";
+    document.getElementById("story-modal-icon").src = imageUrl;
     document.getElementById("story-modal-korean-name").textContent = flower.name;
     document.getElementById("story-modal-english-name").textContent =
         `(${flower.english || flower.type || "Flower"})`;
     document.getElementById("story-modal-summary").textContent =
-        `${flower.type} · ${flower.language}`;
-    document.getElementById("story-modal-description").textContent =
-        flower.description || `${flower.name}은(는) ${flower.language}의 꽃말을 지니며, ${flower.meaning}의 의미를 전합니다.`;
-    document.getElementById("story-modal-language").textContent = flower.language;
-    document.getElementById("story-modal-color").textContent = flower.color;
-    document.getElementById("story-modal-origin").textContent = flower.origin;
-    document.getElementById("story-modal-season").textContent = flower.season;
-    document.getElementById("story-modal-features").textContent = flower.features;
-    document.getElementById("story-modal-care").textContent = flower.care;
-    document.getElementById("story-modal-note").textContent =
-        `${flower.name}은(는) ${flower.meaning}의 의미를 전하는 꽃입니다.`;
+        `${flower.type || ""}${flower.language ? ` · ${flower.language}` : ""}`;
+    document.getElementById("story-modal-language").textContent = flower.language || "";
+    document.getElementById("story-modal-meaning").textContent = flower.meaning || "";
+    const colors = document.getElementById("story-modal-colors");
+    colors.replaceChildren(...((flower.color_meanings || []).map((item) => {
+        const color = document.createElement("div");
+        color.className = "story-modal-color-item";
+        const swatch = document.createElement("span");
+        swatch.className = "story-modal-color-swatch";
+        swatch.style.backgroundColor = colorSwatches[item.color] || "#d8c6c1";
+        const text = document.createElement("span");
+        text.innerHTML = `<strong>${escapeHtml(item.color)}</strong><small>${escapeHtml(item.meaning)}</small>`;
+        color.append(swatch, text);
+        return color;
+    })));
     detailModal.hidden = false;
     document.body.classList.add("story-modal-open");
     lastFocusedElement = trigger;
