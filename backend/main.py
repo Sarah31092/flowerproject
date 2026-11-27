@@ -1,8 +1,9 @@
 from pathlib import Path
 import sys
+from urllib.parse import urlencode
 
 from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
@@ -36,22 +37,17 @@ def flower_chat(request: Request):
 
 
 @app.get("/flowers", response_class=HTMLResponse)
-def flower_types(request: Request):
-    return templates.TemplateResponse(request=request, name="flower_types.html")
-
-
-@app.get("/flower-stories", response_class=HTMLResponse)
-def flower_stories(request: Request):
-    return templates.TemplateResponse(request=request, name="flower_stories.html")
-
-
-@app.get("/flowers/{name}", response_class=HTMLResponse)
-def flower_page(request: Request, name: str):
-    flower = store.get_by_name(name)
-    if flower is None:
+def flower_types(request: Request, flower: str | None = None):
+    selected_flower = store.get_by_name(flower) if flower else None
+    if flower and selected_flower is None:
         raise HTTPException(status_code=404, detail="꽃 정보를 찾을 수 없습니다.")
     return templates.TemplateResponse(
         request=request,
-        name="flower_detail.html",
-        context={"flower": flower},
+        name="flower_types.html",
+        context={"selected_flower": selected_flower},
     )
+
+
+@app.get("/flowers/{name}", response_class=RedirectResponse)
+def flower_page(name: str):
+    return RedirectResponse(f"/flowers?{urlencode({'flower': name})}")

@@ -6,7 +6,7 @@ const status = document.getElementById("status");
 const flowerImages = {
     "장미": "/static/flowers/01_rose.png",
     "라벤더": "/static/flowers/02_lavender.png",
-    "해바라기": "/static/flowers/03_sunflower.png",
+    "해바라기": "/static/flowers/reference/03_sunflower.png",
     "국화": "/static/flowers/04_chrysanthemum.png",
     "튤립": "/static/flowers/05_tulip.png",
     "카네이션": "/static/flowers/06_carnations.png",
@@ -75,9 +75,23 @@ function render(flowers, isSearch) {
         ? `${flowers.length}개의 꽃말 정보를 찾았어요`
         : `${String(flowers.length).padStart(2, "0")} FLOWERS TO DISCOVER`;
     results.innerHTML = flowers.map((flower, index) => {
-        const image = flowerImages[flower.name] || fallbackImage;
+        if (flower.reference_only) {
+            const name = escapeHtml(flower.korean_name || flower.name);
+            return `
+                <a class="flower-card" href="/flowers?flower=${encodeURIComponent(flower.name)}">
+                    ${flower.photo ? `<div class="flower-photo">
+                        <img src="${escapeHtml(flower.photo.url)}" alt="${name}"
+                             loading="lazy" onerror="this.parentElement.hidden=true">
+                    </div>` : ""}
+                    <div class="flower-info">
+                        <h3>${name}</h3>
+                        <p class="flower-language">${escapeHtml(flower.language)}</p>
+                    </div>
+                </a>`;
+        }
+        const image = escapeHtml(flower.photo?.url || flowerImages[flower.name] || fallbackImage);
         return `
-            <a class="flower-card" href="/flowers/${encodeURIComponent(flower.name)}" aria-label="${escapeHtml(flower.name)} 상세 정보 보기">
+            <a class="flower-card" href="/flowers?flower=${encodeURIComponent(flower.name)}" aria-label="${escapeHtml(flower.name)} 상세 정보 보기">
                 <div class="flower-photo">
                     <img src="${image}" alt="${escapeHtml(flower.name)}" loading="lazy"
                          onerror="this.src='${fallbackImage}'">
@@ -104,7 +118,7 @@ function render(flowers, isSearch) {
 function escapeHtml(value) {
     const element = document.createElement("div");
     element.textContent = value == null ? "" : String(value);
-    return element.innerHTML;
+    return element.innerHTML.replaceAll('"', "&quot;");
 }
 
 loadFlowers();

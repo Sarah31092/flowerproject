@@ -1,5 +1,4 @@
 .types-page { min-height: calc(100vh - 132px); background: #fff8f8; }
-.nav-divider { width: 1px; height: 15px; background: #e5a5b7; }
 
 .types-hero {
     height: 360px;
@@ -62,7 +61,7 @@
 .type-results .flower-card:hover img { transform: scale(1.04); }
 .type-results .flower-number,.type-results .flower-meta,.type-results .flower-details { display: none; }
 .type-results .flower-info { min-height: 105px; padding: 9px 10px 7px; text-align: center; background: linear-gradient(110deg,#fff,#fff6f7); }
-.type-results .flower-info h3 { margin: 0 0 4px; color: #873e4d; font-family: "Gowun Batang",serif; font-size: 16px; font-weight: 700; }
+.type-results .flower-info h3 { margin: 0 0 4px; padding: 0; color: #873e4d; font-family: "Gowun Batang",serif; font-size: 16px; font-weight: 700; }
 .type-results .flower-language { margin: 0 0 8px; color: #a64e69; font-family: "Gowun Batang",serif; font-size: 12px; }
 .type-detail { min-width: 132px; height: 31px; padding: 0 12px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid #ff9fba; border-radius: 999px; color: #d74473; background: #fffafa; font-family: "Gowun Batang",serif; font-size: 11px; }
 .type-detail > span { font-size: 19px; line-height: 1; }
@@ -74,6 +73,17 @@
 .types-page .footer-links { gap: 12px; font-size: 10px; }
 .types-page .footer-social { width: 34px; height: 34px; display: inline-grid; place-items: center; border: 2px solid #ef6c98; border-radius: 50%; color: #e85d89; font-family: "DM Sans",sans-serif; font-size: 16px; }
 .sr-only { width: 1px; height: 1px; position: absolute; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+.reference-flower-mark {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    color: #ce7695;
+    background: radial-gradient(ellipse at 30% 20%,#fff3f2,#f4dce7);
+    font: clamp(38px,7vw,78px)/1 "Gowun Batang",serif;
+}
+.type-results .flower-photo .reference-flower-image { position: absolute; inset: 0; }
+.type-results .flower-photo .reference-flower-image[hidden] { display: none; }
+.reference-flower-name { margin: 0 0 4px; color: #805564; font-size: 12px; overflow-wrap: anywhere; }
 
 body.modal-open { overflow: hidden; }
 .flower-modal[hidden] { display: none; }
@@ -81,69 +91,163 @@ body.modal-open { overflow: hidden; }
     position: fixed;
     z-index: 20;
     inset: 0;
-    padding: 4vh 5vw;
+    padding: 3vh 3vw;
     display: grid;
     place-items: center;
-    background: rgba(99,43,61,.38);
-    backdrop-filter: blur(7px);
+    background: #50303757;
+    backdrop-filter: blur(4px);
 }
 .flower-modal-panel {
-    width: min(1450px,100%);
-    max-height: 92vh;
-    min-height: min(720px,82vh);
-    padding: 32px;
     position: relative;
-    display: grid;
-    grid-template-columns: minmax(320px,.9fr) minmax(0,1.1fr);
-    gap: clamp(32px,4vw,64px);
-    overflow-y: auto;
-    border: 1px solid rgba(244,178,196,.75);
-    border-radius: 42px;
+    width: min(1540px,100%);
+    max-height: 94dvh;
+    padding: clamp(24px,4vw,64px);
+    overflow: auto;
+    overscroll-behavior: contain;
+    border: 1px solid #f4c8cc;
+    border-radius: 24px;
+    color: #5c3b39;
     background:
-        radial-gradient(ellipse at 92% 10%,rgba(255,215,226,.52),transparent 25%),
-        radial-gradient(ellipse at 80% 100%,rgba(255,230,232,.75),transparent 30%),
-        linear-gradient(135deg,#fffafa,#fff 54%,#fff5f6);
-    box-shadow: 0 22px 65px rgba(91,34,52,.24);
+        radial-gradient(ellipse at 9% 12%,#ffe9e7,transparent 55%),
+        radial-gradient(ellipse at 100% 100%,#f9e5e4,transparent 48%),
+        #fff6f3;
+    font-family: "Gowun Batang",serif;
+    box-shadow: 0 20px 65px #542b3a33;
 }
 .flower-modal-close {
-    width: 50px;
-    height: 50px;
     position: absolute;
-    z-index: 2;
-    top: 17px;
-    right: 21px;
+    z-index: 1;
+    top: 8px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
     border: 0;
-    color: #8e2853;
+    border-radius: 50%;
+    color: #aa3550;
     background: transparent;
-    font-family: "DM Sans",sans-serif;
-    font-size: 44px;
-    font-weight: 300;
-    line-height: 1;
+    font: 29px/1 "DM Sans",sans-serif;
     cursor: pointer;
 }
-.flower-modal-left { min-width: 0; display: flex; flex-direction: column; gap: 18px; }
-.modal-flower-image { width: 100%; height: clamp(360px,57vh,620px); display: block; border-radius: 27px; object-fit: cover; box-shadow: 0 8px 22px rgba(187,89,116,.15); }
-.modal-tip { padding: 0 4px; color: #7e334f; font-family: "Gowun Batang",serif; }
-.modal-tip strong { display: block; margin-bottom: 10px; font-size: 18px; }
-.modal-tip strong span { margin-right: 7px; color: #eb6794; }
-.modal-tip p { margin: 0; padding: 15px 19px; border: 1px solid #ffd1de; border-radius: 20px; color: #824457; background: rgba(255,233,239,.8); font-size: 14px; line-height: 1.8; word-break: keep-all; }
-.flower-modal-content { min-width: 0; padding: 18px 4px 5px 0; display: flex; flex-direction: column; }
-.modal-flower-heading { min-height: 140px; padding-right: 45px; display: flex; align-items: center; gap: 26px; }
-.modal-flower-icon { width: 128px; flex: 0 0 auto; font-size: 88px; text-align: center; filter: drop-shadow(0 6px 6px rgba(197,89,122,.15)); }
-.modal-flower-heading h2 { margin: 0; color: #e2467e; font-family: "Gowun Batang",serif; font-size: clamp(32px,3.2vw,48px); line-height: 1.25; word-break: keep-all; }
-.modal-flower-heading h2 small { color: #ca4f7b; font-size: .62em; font-weight: 400; white-space: nowrap; }
-.modal-flower-heading p { margin: 10px 0 0; color: #7c2948; font-family: "Gowun Batang",serif; font-size: clamp(15px,1.5vw,21px); line-height: 1.6; }
-.modal-flourish { height: 44px; margin: 0 0 18px; display: flex; align-items: center; gap: 14px; color: #ee7da1; }
-.modal-flourish::before,.modal-flourish::after { height: 1px; flex: 1; background: #f2a6bd; content: ""; }
-.modal-flourish span { font-size: 25px; }
-.modal-flower-description { margin: 0 0 24px; color: #772d4b; font-family: "Gowun Batang",serif; font-size: clamp(16px,1.55vw,22px); line-height: 1.9; word-break: keep-all; }
-.modal-flower-facts { margin: 0; padding: 14px 22px; border: 1px solid #f9c2d1; border-radius: 24px; background: linear-gradient(115deg,rgba(255,231,238,.85),rgba(255,244,246,.86)); }
-.modal-flower-facts > div { min-height: 53px; display: grid; grid-template-columns: minmax(115px,.38fr) 1fr; align-items: center; gap: 16px; }
-.modal-flower-facts dt { color: #73354c; font-family: "Gowun Batang",serif; font-size: 16px; font-weight: 700; white-space: nowrap; }
-.modal-flower-facts dt span { margin-right: 10px; font-size: 20px; }
-.modal-flower-facts dd { margin: 0; color: #783950; font-family: "Gowun Batang",serif; font-size: 16px; line-height: 1.55; word-break: keep-all; }
-.modal-dismiss { width: min(250px,80%); min-height: 58px; margin: auto auto 0; padding: 10px 25px; display: inline-flex; align-items: center; justify-content: center; gap: 12px; border: 0; border-radius: 999px; color: white; background: linear-gradient(100deg,#ef62bd,#f4539c); box-shadow: 0 8px 18px rgba(219,70,147,.2); font-family: "Gowun Batang",serif; font-size: 20px; cursor: pointer; }
-.modal-dismiss span { font-size: 22px; }
+.flower-modal-close:hover, .modal-dismiss:hover { background: #fadfe2; }
+.modal-flower-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    color: #884950;
+    font-size: clamp(14px,1.1vw,18px);
+}
+.modal-dismiss {
+    padding: 3px 5px;
+    border: 0;
+    border-radius: 5px;
+    color: inherit;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+}
+.modal-flower-hero {
+    display: grid;
+    grid-template-columns: minmax(0,.39fr) minmax(0,.61fr);
+    align-items: center;
+    gap: clamp(20px,5vw,85px);
+}
+.flower-modal-content { min-width: 0; text-align: center; }
+.flower-modal-content h2 {
+    margin: 0;
+    color: #b53850;
+    font-size: clamp(46px,7.6vw,124px);
+    font-weight: 400;
+    line-height: 1.1;
+    overflow-wrap: anywhere;
+}
+.modal-flower-english {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: clamp(10px,1.5vw,26px);
+    color: #c53957;
+    font: clamp(34px,4.1vw,70px)/1.1 "Allura",cursive;
+    overflow-wrap: anywhere;
+}
+.modal-flower-english[hidden] { display: none; }
+.modal-flower-english::before, .modal-flower-english::after,
+.modal-flower-brand::before, .modal-flower-brand::after {
+    height: 1px;
+    flex: 1;
+    background: #e893a0;
+    content: "";
+}
+.modal-flower-summary {
+    margin: clamp(10px,1.1vw,19px) 0 0;
+    color: #c63253;
+    font-size: clamp(18px,1.7vw,29px);
+    line-height: 1.45;
+    word-break: keep-all;
+}
+.modal-flower-description {
+    margin: clamp(14px,1.9vw,30px) 0 0;
+    font-size: clamp(15px,1.35vw,23px);
+    line-height: 1.6;
+    text-align: left;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+}
+.modal-flower-description:empty { display: none; }
+.modal-flower-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.65;
+    border-radius: 18px;
+    object-fit: cover;
+    object-position: center 39%;
+    background: #f7e2e1;
+}
+.modal-flower-figure { min-width: 0; margin: 0; }
+.modal-flower-credit { margin-top: 6px; font: 12px/1.4 "DM Sans",sans-serif; text-align: right; }
+.modal-flower-credit a { margin-left: 7px; text-decoration: underline; }
+.modal-flower-reference { margin-top: 18px; padding: 12px 20px; border-top: 1px solid #f0b7bf; }
+.modal-flower-reference h3 { margin: 0 0 8px; color: #bd2f50; }
+.modal-flower-reference ul { margin: 0; padding-left: 22px; line-height: 1.65; }
+.modal-flower-reference dl { margin: 0; line-height: 1.65; }
+.modal-flower-reference dt { margin-top: 8px; color: #a33450; font-weight: 700; }
+.modal-flower-reference dd { margin: 0; }
+.modal-flower-detail-facts {
+    display: grid;
+    grid-template-columns: minmax(72px,max-content) minmax(0,1fr);
+    border-top: 1px solid #ecc8cd;
+}
+.modal-flower-detail-facts dt,
+.modal-flower-detail-facts dd {
+    margin: 0;
+    padding: 9px 12px;
+    border-bottom: 1px solid #ecc8cd;
+    overflow-wrap: anywhere;
+}
+.modal-flower-detail-facts dt { background: #fce9e9; }
+#modal-public-flower-status:empty { display: none; }
+.modal-flower-profile-sources { font-size: 13px; }
+.modal-flower-profile-sources a { margin-right: 12px; text-decoration: underline; }
+.public-flower:not(.has-photo) .modal-flower-figure { display: none; }
+.public-flower:not(.has-photo) .modal-flower-hero { grid-template-columns: 1fr; }
+.type-empty[hidden], .modal-flower-credit a[hidden] { display: none; }
+.reference-only:not(.has-photo) .modal-flower-panel { width: min(660px,100%); }
+.reference-only:not(.has-photo) .modal-flower-hero { grid-template-columns: 1fr; }
+.reference-only:not(.has-photo) .modal-flower-figure { display: none; }
+.modal-flower-brand {
+    margin-top: clamp(18px,2.3vw,38px);
+    display: flex;
+    align-items: center;
+    gap: clamp(9px,1.5vw,25px);
+    color: #c23153;
+    font: clamp(25px,2.8vw,43px)/1 "Allura",cursive;
+    white-space: nowrap;
+}
+@media (max-width: 680px) {
+    .flower-modal-panel { padding: 22px 17px; border-radius: 18px; }
+    .modal-flower-hero { grid-template-columns: 1fr; gap: 17px; }
+    .modal-flower-description { text-align: center; }
+}
 
 @media (max-width: 1050px) {
     .types-content { width: calc(100% - 56px); }
@@ -162,14 +266,6 @@ body.modal-open { overflow: hidden; }
     .filter-chip:not(:first-child)::before { top: 14px; }
     .type-results { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
     .type-results .flower-photo { height: clamp(135px,27vw,190px); }
-    .flower-modal { padding: 3vh 3vw; }
-    .flower-modal-panel { min-height: 0; max-height: 94vh; padding: 24px; grid-template-columns: minmax(220px,.8fr) minmax(0,1.2fr); gap: 22px; border-radius: 30px; }
-    .modal-flower-image { height: clamp(260px,43vh,430px); }
-    .modal-flower-heading { gap: 12px; }
-    .modal-flower-icon { width: 75px; font-size: 58px; }
-    .modal-flower-facts { padding: 10px 14px; }
-    .modal-flower-facts > div { grid-template-columns: 100px 1fr; gap: 8px; }
-    .modal-flower-facts dt,.modal-flower-facts dd { font-size: 13px; }
 }
 @media (max-width: 480px) {
     .types-hero { height: 250px; padding: 76px 12px 60px; }
@@ -191,24 +287,4 @@ body.modal-open { overflow: hidden; }
     .types-page .footer-brand { font-size: 21px; }
     .types-page .footer-links { gap: 6px; }
     .types-page .footer-social { width: 28px; height: 28px; }
-    .flower-modal { padding: 12px 9px; }
-    .flower-modal-panel { max-height: 96vh; padding: 17px 15px; grid-template-columns: 1fr; gap: 13px; border-radius: 24px; }
-    .flower-modal-close { top: 11px; right: 11px; width: 38px; height: 38px; font-size: 35px; }
-    .flower-modal-left { gap: 10px; }
-    .modal-flower-image { height: 32vh; min-height: 190px; border-radius: 17px; }
-    .modal-tip strong { margin-bottom: 5px; font-size: 14px; }
-    .modal-tip p { padding: 9px 12px; font-size: 11px; }
-    .flower-modal-content { padding: 0; }
-    .modal-flower-heading { min-height: 72px; padding-right: 30px; gap: 10px; }
-    .modal-flower-icon { width: 54px; font-size: 43px; }
-    .modal-flower-heading h2 { font-size: 27px; }
-    .modal-flower-heading p { margin-top: 4px; font-size: 13px; }
-    .modal-flourish { height: 28px; margin: 0 0 8px; }
-    .modal-flourish span { font-size: 19px; }
-    .modal-flower-description { margin-bottom: 12px; font-size: 13px; line-height: 1.7; }
-    .modal-flower-facts { padding: 8px 12px; border-radius: 16px; }
-    .modal-flower-facts > div { min-height: 38px; grid-template-columns: 95px 1fr; }
-    .modal-flower-facts dt,.modal-flower-facts dd { font-size: 11px; }
-    .modal-flower-facts dt span { margin-right: 5px; font-size: 15px; }
-    .modal-dismiss { min-height: 44px; margin-top: 13px; font-size: 15px; }
 }

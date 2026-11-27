@@ -6,11 +6,15 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 ROOT_DIR = Path(__file__).resolve().parent.parent
 CHROMA_DIR = ROOT_DIR / "chroma_db"
 DATA_FILE = ROOT_DIR / "data" / "flowers.json"
+FLOWER_LANGUAGE_FILE = ROOT_DIR / "data" / "language-of-flowers.csv"
+FLOWER_PHOTO_FILE = ROOT_DIR / "data" / "flower-photos.json"
+FLOWER_PROFILE_FILE = ROOT_DIR / "data" / "flower-profiles.json"
 COLLECTION_NAME = "flowers"
 
 
 class Settings(BaseSettings):
     openai_api_key: SecretStr | None = None
+    flower_api_key: SecretStr | None = None
 
     model_config = SettingsConfigDict(
         env_file=ROOT_DIR / ".env",

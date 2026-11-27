@@ -11,20 +11,7 @@
       {"color": "파랑", "meaning": "기적과 불가능한 꿈"}, {"color": "초록", "meaning": "희망과 새로운 시작"},
       {"color": "검정", "meaning": "이별과 새로운 시작"}
     ],
-    "count_meanings": [
-      {"count": 1, "meaning": "첫눈에 반했습니다"}, {"count": 2, "meaning": "이 세상에는 당신과 나뿐입니다"},
-      {"count": 3, "meaning": "사랑합니다"}, {"count": 4, "meaning": "죽을 때까지 사랑합니다"},
-      {"count": 5, "meaning": "당신을 만난 것이 기쁩니다"}, {"count": 6, "meaning": "당신에게 푹 빠졌습니다"},
-      {"count": 7, "meaning": "은밀한 사랑"}, {"count": 8, "meaning": "당신의 배려에 감사합니다"},
-      {"count": 9, "meaning": "언제나 당신을 사랑합니다"}, {"count": 10, "meaning": "당신은 완벽한 사람입니다"},
-      {"count": 11, "meaning": "누구보다 당신을 사랑합니다"}, {"count": 12, "meaning": "나와 사귀어 주세요"},
-      {"count": 13, "meaning": "영원한 우정"}, {"count": 20, "meaning": "열렬히 사랑합니다"},
-      {"count": 21, "meaning": "당신에게 모든 것을 바칩니다"}, {"count": 24, "meaning": "하루 종일 당신을 생각합니다"},
-      {"count": 30, "meaning": "성숙한 사랑"}, {"count": 50, "meaning": "영원한 사랑"},
-      {"count": 99, "meaning": "영원히 사랑합니다"}, {"count": 100, "meaning": "완전한 사랑"},
-      {"count": 108, "meaning": "나와 결혼해 주세요"}, {"count": 365, "meaning": "매일 당신을 사랑합니다"},
-      {"count": 999, "meaning": "다음 생에도 당신만을 사랑합니다"}
-    ]
+    "count_meanings": []
   },
   {
     "name": "라벤더", "english": "Lavender", "type": "꿀풀과", "language": "기대와 평온", "meaning": "마음의 안정과 고마움", "color": "보라", "origin": "지중해", "season": "여름",

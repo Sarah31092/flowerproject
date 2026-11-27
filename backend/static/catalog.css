@@ -83,16 +83,6 @@ button, input { font: inherit; }
 .flower-info::after { content: "→"; width: 29px; height: 29px; position: absolute; top: 24px; right: 13px; display: grid; place-items: center; border-radius: 50%; color: #b55e67; background: #fbd8d4; font-size: 16px; }
 .empty-state { grid-column: 1/-1; padding: 45px 20px; border: 1px dashed #e6c6c2; border-radius: 12px; color: #916d69; text-align: center; font-size: 12px; }
 
-.story-banner { min-height: 155px; margin: 0 2.6% 13px; position: relative; display: grid; grid-template-columns: 1fr 1.05fr 1.1fr; align-items: center; overflow: hidden; border-radius: 28px; background: linear-gradient(100deg,#fbdedb,#fff0eb 48%,#f8ddd8); }
-.story-heading { z-index: 1; padding: 17px 20px 17px 8%; }
-.story-heading .eyebrow { margin: 0 0 5px; color: #b67a79; font-size: 7px; letter-spacing: .18em; }
-.story-heading h2 { margin: 0 0 5px; color: #7f4149; font-family: "Gowun Batang",serif; font-size: 19px; font-weight: 400; }
-.story-heading > p:not(.eyebrow) { margin: 0; color: #916663; font-family: "Gowun Batang",serif; font-size: 10px; line-height: 1.6; }
-.story-button { margin-top: 9px; padding: 6px 12px; display: inline-flex; gap: 13px; border: 1px solid #e4a2a0; border-radius: 999px; color: #a95f64; font-size: 9px; }
-.story-button span { font-size: 13px; line-height: .8; }
-.story-banner blockquote { z-index: 1; margin: 0; color: #82434b; font-family: "Gowun Batang",serif; font-size: clamp(16px,2vw,24px); line-height: 1.55; text-align: center; }
-.story-garden { height: 100%; position: absolute; right: 0; bottom: 0; width: 48%; background: linear-gradient(90deg,#ffebe7 0%,rgba(255,235,231,.12) 34%),url("flower-garden-background.png") center 64%/cover; opacity: .8; }
-.story-decoration { position: absolute; left: 1%; bottom: -32px; color: rgba(199,133,126,.45); font-size: 125px; }
 .site-footer { min-height: 54px; padding: 8px 3.7%; display: flex; align-items: center; justify-content: space-between; gap: 16px; color: #a27b78; }
 .footer-brand { font-size: 24px; }
 .footer-brand .brand-mark { font-size: 19px; }
@@ -132,11 +122,6 @@ button, input { font: inherit; }
     .results { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 11px; }
     .flower-photo { height: clamp(105px, 28vw, 170px); }
     .flower-info { min-height: 87px; }
-    .story-banner { min-height: 188px; margin: 0 12px 10px; grid-template-columns: 1fr 1fr; border-radius: 21px; }
-    .story-heading { padding-left: 20px; }
-    .story-banner blockquote { font-size: 15px; }
-    .story-garden { width: 50%; opacity: .58; }
-    .story-decoration { font-size: 85px; }
     .site-footer { flex-wrap: wrap; padding: 10px 17px; }
     .footer-brand { font-size: 21px; }
     .copyright { display: none; }
@@ -155,11 +140,9 @@ button, input { font: inherit; }
     .flower-info { padding-left: 9px; }
     .flower-card h3 { font-size: 13px; }
     .flower-info::after { width: 25px; height: 25px; top: 25px; right: 8px; }
-    .story-banner { min-height: 170px; }
-    .story-heading h2 { font-size: 15px; }
-    .story-banner blockquote { font-size: 13px; }
     .footer-links { gap: 4px; font-size: 6px; }
 }
 @media (prefers-reduced-motion: reduce) {
     *,*::before,*::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+.flower-photo[hidden] { display: none; }

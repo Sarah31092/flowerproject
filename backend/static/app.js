@@ -5,18 +5,6 @@ const sendButton = document.getElementById("send-button");
 const newChatButton = document.getElementById("new-chat");
 const conversation = [];
 
-const flowerImages = {
-    "장미": "photo-1490750967868-88aa4486c946",
-    "라벤더": "photo-1470252649378-9c29740c9fa8",
-    "해바라기": "photo-1470509037663-253afd7f0f51",
-    "국화": "photo-1508610048659-a06b669e3321",
-    "튤립": "photo-1520763185298-1b434c919102",
-    "카네이션": "photo-1494972308805-463bc619d34e",
-    "벚꽃": "photo-1522383225653-ed111181a951",
-    "수국": "photo-1508610048659-a06b669e3321"
-};
-const fallbackImage = "photo-1490750967868-88aa4486c946";
-
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     sendMessage();
@@ -41,7 +29,7 @@ messages.addEventListener("click", (event) => {
     form.requestSubmit();
 });
 
-newChatButton.addEventListener("click", resetChat);
+newChatButton?.addEventListener("click", resetChat);
 
 async function sendMessage() {
     const message = input.value.trim();
@@ -68,7 +56,7 @@ async function sendMessage() {
         typing.remove();
         conversation.push({role: "user", content: message});
         conversation.push({role: "assistant", content: data.answer});
-        appendAssistant(data.answer, data.flowers);
+        appendAssistant(data.answer);
     } catch (error) {
         typing.remove();
         appendMessage("assistant", error.message);
@@ -93,7 +81,7 @@ function appendMessage(role, text) {
     return row;
 }
 
-function appendAssistant(text, flowers) {
+function appendAssistant(text) {
     const row = document.createElement("div");
     row.className = "message-row assistant";
     row.innerHTML = `<span class="message-avatar" aria-hidden="true">🌸</span>`;
@@ -104,52 +92,9 @@ function appendAssistant(text, flowers) {
     bubble.textContent = text;
     content.appendChild(bubble);
 
-    if (flowers.length) {
-        const recommendations = document.createElement("div");
-        recommendations.className = "recommendations";
-        recommendations.innerHTML = `<p class="recommendation-title">당신의 마음에 어울리는 꽃</p>`;
-        flowers.forEach((flower, index) => {
-            recommendations.appendChild(createFlowerCard(flower, index));
-        });
-        content.appendChild(recommendations);
-    }
     row.appendChild(content);
     messages.appendChild(row);
     scrollToLatest();
-}
-
-function createFlowerCard(flower, index) {
-    const card = document.createElement("article");
-    card.className = "recommendation-card";
-    const imageId = flowerImages[flower.name] || fallbackImage;
-    const image = document.createElement("img");
-    image.src = `https://images.unsplash.com/${imageId}?auto=format&fit=crop&w=180&h=180&q=75`;
-    image.alt = flower.name;
-    image.loading = "lazy";
-    image.onerror = () => {
-        image.onerror = null;
-        image.src = `https://images.unsplash.com/${fallbackImage}?auto=format&fit=crop&w=180&h=180&q=75`;
-    };
-
-    const details = document.createElement("div");
-    details.className = "recommendation-details";
-    const label = document.createElement("span");
-    label.className = "recommendation-label";
-    label.textContent = `추천 ${String(index + 1).padStart(2, "0")} · ${flower.type || "꽃"}`;
-    const title = document.createElement("h3");
-    title.textContent = flower.name;
-    const language = document.createElement("p");
-    language.className = "recommendation-language";
-    language.textContent = `꽃말 · ${flower.language}`;
-    const meaning = document.createElement("p");
-    meaning.className = "recommendation-meaning";
-    meaning.textContent = flower.meaning;
-    const meta = document.createElement("span");
-    meta.className = "recommendation-meta";
-    meta.textContent = `${flower.color} · ${flower.season}`;
-    details.append(label, title, language, meaning, meta);
-    card.append(image, details);
-    return card;
 }
 
 function appendTyping() {

@@ -1,0 +1,702 @@
+{
+  "Abatina": {
+    "url": "/static/flowers/reference/bb8790a486179d.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Abatia_angeliana.jpg",
+    "credit": "John Nugent Fitch",
+    "license": "Public domain",
+    "license_url": ""
+  },
+  "Acanthus": {
+    "url": "/static/flowers/reference/e3b6d6e2dd315f.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Acanthus_mollis_flower,_Tasmajdan.jpg",
+    "credit": "Gmihail at Serbian Wikipedia",
+    "license": "CC BY-SA 3.0 rs",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en"
+  },
+  "Aloe": {
+    "url": "/static/flowers/reference/bbb857b0b41d9b.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Aloe_arborescens_on_Monte_Vumba_(4387600468).jpg",
+    "credit": "Ton Rulkens",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "Amaryllis": {
+    "url": "/static/flowers/reference/9939c22485ee5f.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Naked_Ladies,_Hinsdale_Rhododendron_Garden_(15022561349).jpg",
+    "credit": "Bureau of Land Management Oregon and Washington from Portland, America",
+    "license": "Public domain",
+    "license_url": ""
+  },
+  "Anemone": {
+    "url": "/static/flowers/reference/b8b8423a6ea4e2.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Anemones5.jpg",
+    "credit": "Aviad2001",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Angelica": {
+    "url": "/static/flowers/reference/a847fdde20d326.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Angelica_archangelica_flower.JPG",
+    "credit": "Deecodee",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Apple blossom": {
+    "url": "/static/flowers/reference/4a383ab91dc4f0.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Apple-tree_blossoms_2017_G3.jpg",
+    "credit": "George Chernilevsky",
+    "license": "Public domain",
+    "license_url": ""
+  },
+  "Arborvitae": {
+    "url": "/static/flowers/reference/1a063c9b3ae34d.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Thuja_standishii.jpg",
+    "credit": "en:User:MPF",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Aster": {
+    "url": "/static/flowers/reference/271dd0601e6cd8.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Asteraceae_-_Aster_amellus.JPG",
+    "credit": "Hectonichus",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Bachelor’s button": {
+    "url": "/static/flowers/reference/f37a8ff76c8f13.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Centaurea_cyanus_flower_001.jpg",
+    "credit": "Orikrin1998",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "Sweet Basil": {
+    "url": "/static/flowers/reference/56e288b82e403c.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ocimum_basilicum_8zz.jpg",
+    "credit": "Photo by David J. Stang",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Bay tree": {
+    "url": "/static/flowers/reference/ea55bcec1c1aa5.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Laurus_nobilis_MHNT_Fleurs.jpg",
+    "credit": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Begonia": {
+    "url": "/static/flowers/reference/fde212eeeed95f.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Begonia_obliqua00.jpg",
+    "credit": "Robert John Thornton (1768-1837)",
+    "license": "Public domain",
+    "license_url": ""
+  },
+  "Belledonna": {
+    "url": "/static/flowers/reference/dcf2e732277ca1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Atropa_belladonna_(16627871072).jpg",
+    "credit": "Joan Simon from Barcelona, España",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  "Bittersweet": {
+    "url": "/static/flowers/reference/ed2c79e329c1fa.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bitterweet_Nightshade_2.jpg",
+    "credit": "D. Gordon E. Robertson",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Black-eyed Susan": {
+    "url": "/static/flowers/reference/bb48005c6b15bc.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Rudbeckia_hirta_kz03.jpg",
+    "credit": "Krzysztof Ziarnek, Kenraiz",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Bluebell": {
+    "url": "/static/flowers/reference/99ebd7793a1478.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hyacinthoides_non-scripta_(Common_Bluebell).jpg",
+    "credit": "MichaelMaggs",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Borage": {
+    "url": "/static/flowers/reference/ac64f0d0c3766b.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Borago_officinalis_(2025).jpg",
+    "credit": "Christian Orlandi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Butterfly weed": {
+    "url": "/static/flowers/reference/4ea722936af5c5.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Asclepias_tuberosa_interior.jpg",
+    "credit": "Eric Hunt",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Camellia, pink": {
+    "url": "/static/flowers/reference/92ab6c6a79af28.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Camellia_japonica_%27Pink_Perfection%27.jpg",
+    "credit": "No machine-readable author provided. User:Fir0002 assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Camellia, red": {
+    "url": "/static/flowers/reference/88bca5f526ff01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Camellia_japonica_flower_with_raindrops_in_the_sun.jpg",
+    "credit": "Lucas Libre",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "Camellia, white": {
+    "url": "/static/flowers/reference/f38c56a7b8d68c.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Camellia_japonica_-_white_NBG.jpg",
+    "credit": "PumpkinSky",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Candytuft": {
+    "url": "/static/flowers/reference/55b337082f415a.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Iberis%2Bsempervirens.jpg",
+    "credit": "Chrumps",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Chamomile": {
+    "url": "/static/flowers/reference/e3e475e0e5d77f.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Matricaria_February_2008-1.jpg",
+    "credit": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Chives": {
+    "url": "/static/flowers/reference/ae901748b9c834.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Allium_schoenoprasum_-_Bombus_lapidarius_-_Tootsi.jpg",
+    "credit": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Clematis": {
+    "url": "/static/flowers/reference/cc06faf85a9470.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Clematis_%27Nelly_Moser%27.JPG",
+    "credit": "Jolly Janner",
+    "license": "Public domain",
+    "license_url": ""
+  },
+  "Clover": {
+    "url": "/static/flowers/reference/3f95e1af82af41.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Trifolium_repens_(inflorescense)_Edit.jpg",
+    "credit": "© Hans Hillewaert",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Columbine": {
+    "url": "/static/flowers/reference/f8653003323554.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Wald-Akelei.JPG",
+    "credit": "Python (Peter Rühr)",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "Coreopsis": {
+    "url": "/static/flowers/reference/c8894db1b588b4.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Coreopsisgigantea.jpg",
+    "credit": "Joyce Cory",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "Coriander": {
+    "url": "/static/flowers/reference/b3796362aceb00.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Coriandrum_sativum_-_inflorescence.jpg",
+    "credit": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Crab blossom": {
+    "url": "/static/flowers/reference/8b80e0b914a6d7.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Malus_floribunda_(Japanese_crabapple).jpg",
+    "credit": "MichaelMaggs",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "Crocus": {
+    "url": "/static/flowers/reference/805ddbb55fb557.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:860808-Saffronfarm-01-IMG_7707-2.jpg",
+    "credit": "Safa.daneshvar",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Cyclamen": {
+    "url": "/static/flowers/reference/00d16c9aa28c39.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cyclamen_purpurascens_sl3.jpg",
+    "credit": "Stefan.lefnaer",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Daffodil": {
+    "url": "/static/flowers/reference/4c7bfe9161a0dd.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Narcissus_poeticus_subsp._radiiflorus.1658.jpg",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Dahlia": {
+    "url": "/static/flowers/reference/9d3c9de254b9de.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Dahlia_pinnata_%27Happy_Single_Wink%27_-_flower_and_foliage.jpg",
+    "credit": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Dill": {
+    "url": "/static/flowers/reference/f3cc9a84e49937.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Starr-130504-4392-Anethum_graveolens-flowers-Hawea_Pl_Olinda-Maui_(24842938569).jpg",
+    "credit": "Forest & Kim Starr",
+    "license": "CC BY 3.0 us",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/us/deed.en"
+  },
+  "Edelweiss": {
+    "url": "/static/flowers/reference/47979f0d538c86.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Alpen_Edelwei%C3%9F,_Leontopodium_alpinum_2.JPG",
+    "credit": "Böhringer Friedrich",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "Fennel": {
+    "url": "/static/flowers/reference/89e5425c8132db.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Foeniculum_July_2011-1a.jpg",
+    "credit": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Fern": {
+    "url": "/static/flowers/reference/a2251170f47ee1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Dryopteris_filix-mas_TK_2021-05-09_1.jpg",
+    "credit": "T. Kebert",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Forget-me-not": {
+    "url": "/static/flowers/reference/8dfc405ee390f8.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Myosotis_arvensis_ois.JPG",
+    "credit": "Sedum Tauno Erik",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "Gardenia": {
+    "url": "/static/flowers/reference/0bf3ebc6253b1a.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gardenia_jasminoides_flower_Argentina.jpg",
+    "credit": "Adriel anv00",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Geranium": {
+    "url": "/static/flowers/reference/090ded1826a1dc.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Geranium_February_2008-1.jpg",
+    "credit": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Gladiolus": {
+    "url": "/static/flowers/reference/35bfa7674cea5a.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:0_Gladiolus_italicus_-_Samo%C3%ABns_(1).JPG",
+    "credit": "Jean-Pol GRANDMONT",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Goldenrod": {
+    "url": "/static/flowers/reference/287f66ac7e20e0.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Solidago_nemoralis.jpg",
+    "credit": "Wikimedia Commons",
+    "license": "Public domain",
+    "license_url": ""
+  },
+  "Heliotrope": {
+    "url": "/static/flowers/reference/76c9974d5e9452.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Heliotropium_arborescens_%27Mini_Marine%27_Heliotrope_Flower_2500px.jpg",
+    "credit": "Photo (c)2006 Derek Ramsey ( Ram-Man )",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "Hibiscus": {
+    "url": "/static/flowers/reference/7399313f0af335.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Chinese_hibiscus_(Hibiscus_%C3%97_rosa-sinensis)_flower,_Estufa_Fria,_Lisbon,_Portugal_julesvernex2.jpg",
+    "credit": "Jules Verne Times Two",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Holly": {
+    "url": "/static/flowers/reference/7cb7d8e09ced05.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ilex-aquifolium_(Europaeische_Stechpalme-1).jpg",
+    "credit": "Jürgen Howaldt",
+    "license": "CC BY-SA 2.0 de",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en"
+  },
+  "Hollyhock": {
+    "url": "/static/flowers/reference/32afcd56b439e3.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Alcea_rosea_purple.jpg",
+    "credit": "PJDespa",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Honeysuckle": {
+    "url": "/static/flowers/reference/13b381bbc7e823.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lonicera_caprifolium001.jpg",
+    "credit": "Meneerke bloem",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Hyacinth": {
+    "url": "/static/flowers/reference/647cd319b25e61.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hyacinth_flower.jpg",
+    "credit": "Plantman",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Hyssop": {
+    "url": "/static/flowers/reference/a3f6088ded6328.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hyssopus-officinalis-flowers.jpg",
+    "credit": "Sten",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Iris": {
+    "url": "/static/flowers/reference/9c79481275fc9e.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Iris_sanguinea_cultivar,_Wakehurst_Place,_UK_-_Diliff.jpg",
+    "credit": "Diliff",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Ivy": {
+    "url": "/static/flowers/reference/ee5e85c8ab5e65.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hedera_helix_Dover.jpg",
+    "credit": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Jasmine": {
+    "url": "/static/flowers/reference/8b5d3ca5f532fa.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:%27Jasminum_officinale%27_Fiona_Sunrise_or_Golden_Poet%27s_Jasmine_at_Nuthurst,_West_Sussex,_England.JPG",
+    "credit": "Acabashi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Lady’s Slipper": {
+    "url": "/static/flowers/reference/13d403f9c01fda.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Paphiopedilum_2.jpg",
+    "credit": "Agtx at the English-language Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Larkspur": {
+    "url": "/static/flowers/reference/00743bdf9d3f95.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Delphinium_elatum-20200616-RM-080831.jpg",
+    "credit": "Reinhold Möller",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Lemon balm": {
+    "url": "/static/flowers/reference/e54faa18059b27.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lemon_balm_plant.jpg",
+    "credit": "Amitchell125",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Lilac": {
+    "url": "/static/flowers/reference/ea89a25ae75298.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lilac_Flower%26Leaves,_SC,_Vic,_13.10.2007.jpg",
+    "credit": "Jjron",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Calla Lily": {
+    "url": "/static/flowers/reference/10ad38b91ee485.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Zantedeschia_aethiopica_-1.jpg",
+    "credit": "Eric Hunt",
+    "license": "CC BY-SA 2.5",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "Day Lily": {
+    "url": "/static/flowers/reference/23f4b152c3d142.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hemerocallis_lilioasphodelus.jpg",
+    "credit": "Doronenko",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5"
+  },
+  "Lily-of-the-valley": {
+    "url": "/static/flowers/reference/3924ace5a7d927.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Convallaria_majalis_inflorescence_-_Keila.jpg",
+    "credit": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Lotus Flower": {
+    "url": "/static/flowers/reference/0e869b85ad31a3.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sacred_lotus_Nelumbo_nucifera.jpg",
+    "credit": "T.Voekler",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Magnolia": {
+    "url": "/static/flowers/reference/6780db85202242.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Magnolia_sieboldii_flower_1.jpg",
+    "credit": "William (Ned) Friedman",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Marigold": {
+    "url": "/static/flowers/reference/5d904f789704d8.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tagetes_erecta_chendumalli_chedi.jpg",
+    "credit": "Ezhuttukari",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Marjoram": {
+    "url": "/static/flowers/reference/e9e5b34eb0fa7f.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Origanum_majorana_002.JPG",
+    "credit": "H. Zell",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Mint": {
+    "url": "/static/flowers/reference/dd1df1a8b784df.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Mentha_spicata-IMG_6186.jpg",
+    "credit": "C T Johansson",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Morning glory": {
+    "url": "/static/flowers/reference/d2159c4516d278.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ipomoea_purpurea,_2021-08-31,_Beechview,_05.jpg",
+    "credit": "Cbaile19",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "Myrtle": {
+    "url": "/static/flowers/reference/410e0f13728315.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Myrtus_communis_L._subsp._communis_-_52505075873.png",
+    "credit": "LIGURIAN VASCULAR FLORA",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "Nasturtium": {
+    "url": "/static/flowers/reference/da65fbb942c1d7.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tropaeolum_majus_2005_G1.jpg",
+    "credit": "George Chernilevsky",
+    "license": "Public domain",
+    "license_url": ""
+  },
+  "Oak": {
+    "url": "/static/flowers/reference/7698eb0980e4ff.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Quercus_robur.jpg",
+    "credit": "Wikimedia Commons",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Oregano": {
+    "url": "/static/flowers/reference/2a0b6344ab5435.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Origanum_vulgare_-_harilik_pune.jpg",
+    "credit": "Ivar Leidus",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Pansy": {
+    "url": "/static/flowers/reference/62537fad216cf9.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Viola_x_wittrockiana_%27Volante_Purple_Face%27_Bratek_ogrodowy_2018-04-15_02.jpg",
+    "credit": "Agnieszka Kwiecień, Nova",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Parsley": {
+    "url": "/static/flowers/reference/b1eaa66b2d09c5.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Starr-030628-0125-Petroselinum_crispum-flowers-Kanaio-Maui_(24527656842).jpg",
+    "credit": "Forest & Kim Starr",
+    "license": "CC BY 3.0 us",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/us/deed.en"
+  },
+  "Pine": {
+    "url": "/static/flowers/reference/b7cc0b9a81bd36.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pinus_jeffreyi_at_Lassen_Volcanic_National_Park.jpg",
+    "credit": "Vlad & Marina Butsky on Flickr",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "Poppy": {
+    "url": "/static/flowers/reference/3e980fdfb30287.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Papaver_rhoeas_Lincolnshire_2026.jpg",
+    "credit": "Kieran Roy Powell",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "Rhododendron": {
+    "url": "/static/flowers/reference/d53616a6fc4921.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Alpenroos.jpg",
+    "credit": "albert kok",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "Rosemary": {
+    "url": "/static/flowers/reference/fda15fec09d639.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Rosemary_in_bloom.JPG",
+    "credit": "Margalob",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Rue": {
+    "url": "/static/flowers/reference/31be8eaa1334d3.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Die_Weinraute,_lat._Ruta_graveolens,_Pflanze_mit_den_gelben_Bl%C3%BCten.jpg",
+    "credit": "Plenuska",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Sage": {
+    "url": "/static/flowers/reference/8547719332bd26.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Salvia_officinalis_flowers.jpg",
+    "credit": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Salvia": {
+    "url": "/static/flowers/reference/8547719332bd26.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Salvia_officinalis_flowers.jpg",
+    "credit": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Savory": {
+    "url": "/static/flowers/reference/c5ba05161d63cf.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Satureja_montana0.jpg",
+    "credit": "Kurt Stüber [1]",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Snapdragon": {
+    "url": "/static/flowers/reference/f5e9d8e490109d.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Antirrhinum_majus_BCBG_(02).jpg",
+    "credit": "Craig Franklin",
+    "license": "CC BY-SA 3.0 au",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/au/deed.en"
+  },
+  "Sorrel": {
+    "url": "/static/flowers/reference/ce111621ed191f.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:(MHNT)_Rumex_acetosa_-_Habit.jpg",
+    "credit": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Southernwood": {
+    "url": "/static/flowers/reference/902314d18f972c.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Artemisia_abrotanum0.jpg",
+    "credit": "Kurt Stüber [1]",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Spearmint": {
+    "url": "/static/flowers/reference/66e1d210aecca3.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Minze.jpg",
+    "credit": "Simon Eugster -- Simon 13:07, 2 July 2006 (UTC)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Speedwell": {
+    "url": "/static/flowers/reference/6605f7fa90c370.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Veronica_chamaedrys_-_K%C3%BClmamailane.jpg",
+    "credit": "Ivar Leidus",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Sunflower, dwarf": {
+    "url": "/static/flowers/reference/63ef9d45936ec0.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Dwarf_sunflower_seedling.jpg",
+    "credit": "Hildabast",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "Sunflower, tall": {
+    "url": "/static/flowers/reference/5116ce4a32c740.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Helianthus_annuus_%27Tall_Double_Sungold%27_(sunflower),_field_of_double_sunflowers_(SaatPilot).jpg",
+    "credit": "Steffen Bauer (www.saatpilot.de)",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "Sweet pea": {
+    "url": "/static/flowers/reference/4300c848f3f476.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sweet_Pea-7.jpg",
+    "credit": "Aftabbanoori",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Sweet William": {
+    "url": "/static/flowers/reference/65f35ab3474a0b.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Dianthus_barbatus_flowers_01.jpg",
+    "credit": "Kor!An (Андрей Корзун)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Sweet woodruff": {
+    "url": "/static/flowers/reference/f095f866735d69.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Waldmeister(Mai).JPG",
+    "credit": "Hajotthu",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Tansy": {
+    "url": "/static/flowers/reference/18fd4447ea04cf.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tanacetum_vulgare_-_harilik_soolikarohi_Keilas2.jpg",
+    "credit": "Ivar Leidus",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "Tarragon": {
+    "url": "/static/flowers/reference/9a1faf277aa144.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Estragon_1511.jpg",
+    "credit": "No machine-readable author provided. Ies assumed (based on copyright claims).",
+    "license": "Public domain",
+    "license_url": ""
+  },
+  "Thyme": {
+    "url": "/static/flowers/reference/385ff0767ff063.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Flowering_Thymus_vulgaris.jpg",
+    "credit": "Pharmattila",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Valerian": {
+    "url": "/static/flowers/reference/ab8a4dc5229db1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Valeriana_officinalis_inflorescence_-_Niitv%C3%A4lja.jpg",
+    "credit": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Violet": {
+    "url": "/static/flowers/reference/c0a91dae2df073.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Viola_reichenbachiana_LC0128.jpg",
+    "credit": "Jörg Hempel",
+    "license": "CC BY-SA 2.0 de",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en"
+  },
+  "Wallflower": {
+    "url": "/static/flowers/reference/fb44c3804d1022.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Erysimum_cheiri3.jpg",
+    "credit": "No machine-readable author provided. Hans B.~commonswiki assumed (based on copyright claims).",
+    "license": "Public domain",
+    "license_url": ""
+  },
+  "Willow": {
+    "url": "/static/flowers/reference/a06401238803cf.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Salix_alba_Morton.jpg",
+    "credit": "Bruce Marlin",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "Yarrow": {
+    "url": "/static/flowers/reference/b3d54639b03695.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Achillea_millefolium_(bright).jpg",
+    "credit": "SAplants",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "Zinnia": {
+    "url": "/static/flowers/reference/521ae13f26a6d1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Zinnia_single_layer_and_12_Petals_2.jpg",
+    "credit": "শক্তিশেল",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+  }
+}
